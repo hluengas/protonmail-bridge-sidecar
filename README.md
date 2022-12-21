@@ -113,4 +113,3 @@ EX
     docker rm protonmail-bridge-container
 
     docker run -d --name="protonmail-bridge-container" --cap-add ipc_lock -e INTERACTIVE="true" -v /path/on/host/appdata/proton:/root:rw hluengas/protonmail-bridge:latest
-# protonmail-bridge-local
