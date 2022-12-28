@@ -9,14 +9,14 @@ if [ $LOGIN == "false" ]; then
 
     if [ $INTERACTIVE == "false" ]; then
         
-        /proton/proton-bridge --noninteractive
+        exec /proton/proton-bridge --noninteractive
     
     else
 
-        /proton/proton-bridge --cli
+        exec /proton/proton-bridge --cli
         
     fi
 
 else 
-    expect /proton/scripts/login.sh
+    exec /proton/scripts/login.sh
 fi

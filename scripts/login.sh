@@ -14,8 +14,7 @@ if { $env(2FA_CODE) == "false" } {
     expect ">>> "
     send "info\r"
     expect ">>> "
-    send "exit\r"
-    expect eof
+    send "exit\r\r"
 } else {
     # Login
     spawn /proton/proton-bridge --cli;
@@ -32,6 +31,5 @@ if { $env(2FA_CODE) == "false" } {
     expect ">>> "
     send "info\r"
     expect ">>> "
-    send "exit\r"
-    expect eof
+    send "exit\r\r"
 }

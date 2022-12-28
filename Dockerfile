@@ -15,7 +15,7 @@ RUN git clone https://github.com/ProtonMail/proton-bridge.git && \
     git checkout v${BRIDGE_VERSION} && \
     make build-nogui
 
-# Rocky Base Image
+# Fedora Base Image
 FROM fedora:37
 
 # Login Variables
